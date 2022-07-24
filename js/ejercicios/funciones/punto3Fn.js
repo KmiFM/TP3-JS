@@ -6,8 +6,8 @@
 
 
 
-var lado1 = lado2 = 0;
-var perimetro = 0;
+let lado1 = lado2 = 0;
+let perimetro = 0;
 
 lado1 = preguntarDato();
 lado2 = preguntarDato();

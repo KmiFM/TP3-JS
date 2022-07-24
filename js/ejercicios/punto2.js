@@ -6,10 +6,29 @@
 // Escribe por pantalla el elemento que ocupa la segunda posición.
 // Sustituye el elemento que ocupa la segunda posición por la ciudad de 'Barcelona'.
 
-let ciudades=[];
+let nombresCiudades=[];
 
-for (var i=0; i < ciudades.length; i++) {
-  ciudades.push(prompt('Agregue una ciudad'));
-  console.log(array[i]);
-}			
-document.write(ciudades);
+do {
+    
+  let ciudad = prompt("Ingrese una ciudad");
+  
+  nombresCiudades.push(ciudad);
+} while (confirm("Desea seguir anotando?"));
+
+document.write(nombresCiudades);
+
+console.log(nombresCiudades.length);
+
+
+// document.write('<br>'+nombresCiudades[0]);
+
+console.log(nombresCiudades[0]);
+console.log(nombresCiudades[2]);
+console.log (nombresCiudades[nombresCiudades.length-1]);
+nombresCiudades.push=('París');
+document.write(nombresCiudades);
+console.log(nombresCiudades[1]);
+
+//modificar elementos de un arreglo (se coloca la posicion a cambiar entre [])
+nombresCiudades[1] = 'Barcelona';
+document.write(nombresCiudades);
