@@ -12,3 +12,4 @@ for (var i=0; i < ciudades.length; i++) {
   ciudades.push(prompt('Agregue una ciudad'));
   console.log(array[i]);
 }			
+document.write(ciudades);
